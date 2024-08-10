@@ -3,8 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": ".",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -15,6 +18,7 @@
     "@radix-ui/react-switch": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "gh-pages": "^6.1.1",
     "lucide-react": "^0.427.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
